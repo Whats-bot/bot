@@ -391,8 +391,10 @@ let str = `
 ° ඬ⃟👑 _${usedPrefix}delprem *<@tag>*_
 ° ඬ⃟👑 _${usedPrefix}listprem_
 `.trim()
+conn.sendHydrated2(m.chat, str, wm, pp,  '𝙿𝙰𝚈𝙿𝙰𝙻',  '𝙶𝙸𝚃𝙷𝚄𝙱', [
+['🌹 𝙾𝚆𝙽𝙴𝚁 🌹', '/owner'],
+], m,)
 
-['🌹 𝙾𝚆𝙽𝙴𝚁 🌹', '/owner']
 
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
 //type: 'audioMessage', 
