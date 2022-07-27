@@ -387,11 +387,11 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 
 *<𝕊𝕋𝕀ℂ𝕂𝔼ℝ𝕊/>*
 
-° ඬ⃟👽 _${usedPrefix}sticker *<responder a imagen o video>*_
-° ඬ⃟👽 _${usedPrefix}sticker *<enlace / link / url>*_
-° ඬ⃟👽 _${usedPrefix}s *<responder a imagen o video>*_
-° ඬ⃟👽 _${usedPrefix}s *<enlace / link / url>*_
-° ඬ⃟👽 _${usedPrefix}emojimix *<emoji 1>&<emoji 2>*_
+° ඬ⃟👽 _${usedPrefix}стикер *<выделите изображение/гиф/видео>*_
+° ඬ⃟👽 _${usedPrefix}стикер *<ссылка на изображение/гиф/видео>*_
+° ඬ⃟👽 _${usedPrefix}с *<выделите изображение/гиф/видео>*_
+° ඬ⃟👽 _${usedPrefix}с *<ссылка на изображение/гиф/видео>*_
+° ඬ⃟👽 _${usedPrefix}смайлмикс *<смайл 1>&<смайл 2>*_
 ° ඬ⃟👽 _${usedPrefix}scircle *<responder a imagen>*_
 ° ඬ⃟👽 _${usedPrefix}sremovebg *<responder a imagen>*_
 ° ඬ⃟👽 _${usedPrefix}semoji *<tipo> <emoji>*_
@@ -404,8 +404,8 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟👽 _${usedPrefix}ttp5 *<texto>*_
 ° ඬ⃟👽 _${usedPrefix}pat *<@tag>*_
 ° ඬ⃟👽 _${usedPrefix}slap *<@tag>*_
-° ඬ⃟👽 _${usedPrefix}kiss *<@tag>*_
-° ඬ⃟👽 _${usedPrefix}dado_
+° ඬ⃟👽 _${usedPrefix}поцелуй *<@участник>*_
+° ඬ⃟👽 _${usedPrefix}кубики_
 ° ඬ⃟👽 _${usedPrefix}wm *<packname> <author>*_
 ° ඬ⃟👽 _${usedPrefix}stickermarker *<efecto> <responder a imagen>*_
 ° ඬ⃟👽 _${usedPrefix}stickerfilter *<efecto> <responder a imagen>*_
