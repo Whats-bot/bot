@@ -7,21 +7,21 @@ try {
 let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
 const url = 'https://www.youtube.com/watch?v=' + videoId
 conn.sendHydrated(m.chat, `
-📌 *𝚃𝙸𝚃𝚄𝙻𝙾:* ${title}
-📇 *𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽:* ${description}
-📆 *𝙿𝚄𝙱𝙻𝙸𝙲𝙰𝙳𝙾:* ${publishedTime}
-⌚ *𝙳𝚄𝚁𝙰𝙲𝙸𝙾𝙽:* ${durationH}
-👀 *𝚅𝙸𝚂𝚃𝙰𝚂:* ${viewH}
+📌 *Название:* ${title}
+📇 *Описание:* ${description}
+📆 *Опубликовано:* ${publishedTime}
+⌚ *Продолжительность:* ${durationH}
+👀 *Просмотрено:* ${viewH}
 `.trim(), author, thumbnail, `${url}`, '𝚄𝚁𝙻', null, null, [
-['𝐀𝐔𝐃𝐈𝐎', `${usedPrefix}yta ${url}`],
-['𝐕𝐈𝐃𝐄𝐎', `${usedPrefix}ytv ${url}`],
-['𝐌𝐀𝐒 𝐑𝐄𝐒𝐔𝐋𝐓𝐀𝐃𝐎𝐒', `${usedPrefix}playlist ${text}`]  
+['ПЕСНЯ', `${usedPrefix}yta ${url}`],
+['КЛИП', `${usedPrefix}ytv ${url}`],
+['ВСЕ РЕЗУЛЬТАТЫ', `${usedPrefix}playlist ${text}`]  
 ], m)
 }catch(e){
-m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*')
+m.reply('*[❗ОШИБКА❗] Загрузка не удалась*')
 console.log(e)
 }}
-handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
+handler.help = ['песня', 'play2'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
 handler.command = /^play2?$/i
 export default handler
