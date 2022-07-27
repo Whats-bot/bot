@@ -5,7 +5,7 @@ import fs from 'fs'
 
 
 global.owner = [
-  ['996755994412']
+  ['79524197466']
 ] // Cambia los numeros que quieras
 global.mods = [] 
 global.prems = [] 
@@ -62,12 +62,12 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = '(☞ﾟ∀ﾟ)☞'
-global.author = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
+global.packname = 'JoKeR'
+global.author = '★JoKeR★'
 
-global.wm = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
-global.igfg = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
-global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
+global.wm = '★JoKeR★'
+global.igfg = '★JoKeR★'
+global.wait = '*⌛ Минуточку..._ ▬▬▬▭*'
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg')
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
