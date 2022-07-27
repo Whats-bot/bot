@@ -53,11 +53,12 @@ let str = `
 ° ඬ⃟🔊 _:c_
 ° ඬ⃟🔊 _a_
 `.trim()
-conn.sendHydrated(m.chat, str, wm, pp, '', null, null, [
+conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
+['𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻', '/menu']
 ], m)
 }}
-handler.help = ['аудиоменю']
+handler.help = ['menu2', 'help2', '?2', 'menuaudios']
 handler.tags = ['main']
-handler.command = /^(аудиоменю)$/i
+handler.command = /^(menu2|audios|menú2|memu2|menuaudio|menuaudios|memuaudios|memuaudio|audios|audio)$/i
 handler.fail = null
 export default  handler

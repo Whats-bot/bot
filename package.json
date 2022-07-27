@@ -20,10 +20,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Whats-bot/bot.git"
+        "url": "git+https://github.com/odinoky/probnik.git"
     },
     "bugs": {
-        "url": "https://github.com/Whats-bot/bot/issues"
+        "url": "https://github.com/odinoky/probnik/issues"
     },
     "license": "MIT",
     "dependencies": {
