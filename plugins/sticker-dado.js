@@ -12,5 +12,5 @@ conn.sendFile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'dadu.webp', 
 }
 handler.help = ['dado']
 handler.tags = ['game']
-handler.command = ['dado', 'dados'] 
+handler.command = ['кубики', 'dados'] 
 export default handler
