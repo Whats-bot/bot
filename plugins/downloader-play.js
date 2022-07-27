@@ -23,5 +23,5 @@ console.log(e)
 }}
 handler.help = ['песня', 'play2'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
-handler.command = /^play2?$/i
+handler.command = /^песня?$/i
 export default handler
