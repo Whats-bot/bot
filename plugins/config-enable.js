@@ -67,7 +67,7 @@ let bot = global.db.data.settings[conn.user.jid] || {}
 let type = (args[0] || '').toLowerCase()
 let isAll = false, isUser = false
 switch (type) {
-case 'приветствие':
+case 'welcome':
 if (!m.isGroup) {
 if (!isOwner) {
 global.dfail('group', m, conn)
@@ -218,11 +218,11 @@ default:
 if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)
 throw false
 }
-conn.sendButton(m.chat, `🗂️ 𝐎𝐏𝐂𝐈𝐎𝐍: ${type} 
-🎚️ 𝐄𝐒𝐓𝐀𝐃𝐎: ${isEnable ? '𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾' : '𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾'}
-📣 𝐏𝐀𝐑𝐀: ${isAll ? '𝙴𝚂𝚃𝙴 𝙱𝙾𝚃' : isUser ? '' : '𝙴𝚂𝚃𝙴 𝙲𝙷𝙰𝚃'}`, author, null, [[`${isEnable ? '✖️ 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✖️' : '✔️ 𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✔️'}`, `${isEnable ? `#disable ${type}` : `#enable ${type}`}`], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '#menu']], m)}
+conn.sendButton(m.chat, `🗂️ Опция: ${type} 
+🎚️ Статус: ${isEnable ? 'Включена' : 'Выключена'}
+📣 𝐏𝐀𝐑𝐀: ${isAll ? 'Для бота' : isUser ? '' : 'Для группы'}`, author, null, [[`${isEnable ? '✖️ 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✖️' : '✔️ 𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✔️'}`, `${isEnable ? `#disable ${type}` : `#enable ${type}`}`], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '#menu']], m)}
 
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^((вкл|выкл)ючить|(tru|fals)e|(turn)?[01])$/i
+handler.command = /^((en|dis)able|(tru|fals)e|(turn)?[01])$/i
 export default handler
