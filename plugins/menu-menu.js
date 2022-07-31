@@ -382,7 +382,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟💵 _${usedPrefix}buy_
 ° ඬ⃟💵 _${usedPrefix}buyall_
 ° ඬ⃟💵 _${usedPrefix}transfer *<tipo> <cantidad> <@tag>*_
-° ඬ⃟💵 _${usedPrefix}verificar_
+° ඬ⃟💵 _${usedPrefix}регистрация_
 ° ඬ⃟💵 _${usedPrefix}unreg *<numero de serie>*_
 
 *<𝕊𝕋𝕀ℂ𝕂𝔼ℝ𝕊/>*

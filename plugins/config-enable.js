@@ -222,7 +222,7 @@ conn.sendButton(m.chat, `🗂️ Опция: ${type}
 🎚️ Статус: ${isEnable ? 'Включена' : 'Выключена'}
 📣 Опция включена: ${isAll ? 'Для бота' : isUser ? '' : 'Для группы'}`, author, null, [[`${isEnable ? '✖️ 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✖️' : '✔️ 𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✔️'}`, `${isEnable ? `#disable ${type}` : `#enable ${type}`}`], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '#menu']], m)}
 
-handler.help = ['en', 'dis'].map(v => v + 'able <option>')
+handler.help = ['ВКЛ', 'ВЫКЛ'].map(v => v + 'ЮЧИТЬ <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^((вкл|выкл)ючить|(tru|fals)e|(turn)?[01])$/i
 export default handler
