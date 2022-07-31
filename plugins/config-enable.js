@@ -28,7 +28,7 @@ footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ┏━━━━━━━━━━━━━┓
 ┣❧ *𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙰 𝚄𝙽𝙰 𝙳𝙴 𝙻𝙰𝚂 𝙾𝙲𝙿𝙸𝙾𝙽𝙴𝚂 𝚀𝚄𝙴 𝚂𝙰𝙻𝙴𝙽 𝙴𝙽 𝙻𝙰 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 𝙻𝙸𝚂𝚃𝙰 𝙾 𝙳𝙰 𝙲𝙻𝙸𝙲𝙺 𝙴𝙽 𝙰𝙻𝙶𝚄𝙽 𝙱𝙾𝚃𝙾𝙽 𝙳𝙴 𝙴𝚂𝚃𝙴 𝙼𝙴𝙽𝚂𝙰𝙹𝙴*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *welcome*_
+┣ ඬ⃟ℹ️ _${usedPrefix}enable *приветствие*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}disable *welcome*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}enable *public*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}disable *public*_
@@ -57,17 +57,17 @@ footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ┗━━━━━━━━━━━━━┛
 ${author}`,
 title: null,
-buttonText: "𝐒𝐄𝐋𝐄𝐂𝐂𝐈𝐎𝐍𝐄 𝐀𝐐𝐔𝐢",
+buttonText: "ПОЛНЫЙ СПИСОК",
 sections }
 
-let isEnable = /true|enable|(turn)?on|1/i.test(command)
+let isEnable = /true|включить|(turn)?on|1/i.test(command)
 let chat = global.db.data.chats[m.chat]
 let user = global.db.data.users[m.sender]
 let bot = global.db.data.settings[conn.user.jid] || {}
 let type = (args[0] || '').toLowerCase()
 let isAll = false, isUser = false
 switch (type) {
-case 'welcome':
+case 'приветствие':
 if (!m.isGroup) {
 if (!isOwner) {
 global.dfail('group', m, conn)
@@ -220,9 +220,9 @@ throw false
 }
 conn.sendButton(m.chat, `🗂️ Опция: ${type} 
 🎚️ Статус: ${isEnable ? 'Включена' : 'Выключена'}
-📣 𝐏𝐀𝐑𝐀: ${isAll ? 'Для бота' : isUser ? '' : 'Для группы'}`, author, null, [[`${isEnable ? '✖️ 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✖️' : '✔️ 𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✔️'}`, `${isEnable ? `#disable ${type}` : `#enable ${type}`}`], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '#menu']], m)}
+📣 Опция включена для: ${isAll ? 'Для бота' : isUser ? '' : 'Для группы'}`, author, null, [[`${isEnable ? '✖️ 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✖️' : '✔️ 𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✔️'}`, `${isEnable ? `#disable ${type}` : `#enable ${type}`}`], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '#menu']], m)}
 
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^((en|dis)able|(tru|fals)e|(turn)?[01])$/i
+handler.command = /^((вкл|выкл)ючить|(tru|fals)e|(turn)?[01])$/i
 export default handler
