@@ -71,22 +71,22 @@ let str = `
 
 *<𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ/>*
 
-° ඬ⃟☑️ _${usedPrefix}enable *welcome*_
-° ඬ⃟☑️ _${usedPrefix}disable *welcome*_
-° ඬ⃟☑️ _${usedPrefix}enable *modohorny*_
-° ඬ⃟☑️ _${usedPrefix}disable *modohorny*_
-° ඬ⃟☑️ _${usedPrefix}enable *antilink*_
-° ඬ⃟☑️ _${usedPrefix}disable *antilink*_
-° ඬ⃟☑️ _${usedPrefix}enable *antilink2*_
-° ඬ⃟☑️ _${usedPrefix}disable *antilink2*_
-° ඬ⃟☑️ _${usedPrefix}enable *detect*_
-° ඬ⃟☑️ _${usedPrefix}disable *detect*_
-° ඬ⃟☑️ _${usedPrefix}enable *audios*_
-° ඬ⃟☑️ _${usedPrefix}disable *audios*_
-° ඬ⃟☑️ _${usedPrefix}enable *autosticker*_
-° ඬ⃟☑️ _${usedPrefix}disable *autosticker*_
-° ඬ⃟☑️ _${usedPrefix}enable *antiviewonce*_
-° ඬ⃟☑️ _${usedPrefix}disable *antiviewonce*_
+° ඬ⃟☑️ _${usedPrefix}включить *приветствие*_
+° ඬ⃟☑️ _${usedPrefix}выключить *приветствие*_
+° ඬ⃟☑️ _${usedPrefix}включить *modohorny*_
+° ඬ⃟☑️ _${usedPrefix}выключить *modohorny*_
+° ඬ⃟☑️ _${usedPrefix}включить *antilink*_
+° ඬ⃟☑️ _${usedPrefix}выключить *antilink*_
+° ඬ⃟☑️ _${usedPrefix}включить *antilink2*_
+° ඬ⃟☑️ _${usedPrefix}выключить *antilink2*_
+° ඬ⃟☑️ _${usedPrefix}включить *detect*_
+° ඬ⃟☑️ _${usedPrefix}выключить *detect*_
+° ඬ⃟☑️ _${usedPrefix}включить *audios*_
+° ඬ⃟☑️ _${usedPrefix}выключить *audios*_
+° ඬ⃟☑️ _${usedPrefix}включить *autosticker*_
+° ඬ⃟☑️ _${usedPrefix}выключить *autosticker*_
+° ඬ⃟☑️ _${usedPrefix}включить *antiviewonce*_
+° ඬ⃟☑️ _${usedPrefix}выключить *antiviewonce*_
 
 *<ℝ𝔼ℙ𝕆ℝ𝕋𝔼𝕊 𝔻𝔼 𝔽𝔸𝕃𝕃𝕆𝕊/>*
 
@@ -110,7 +110,7 @@ let str = `
 ° ඬ⃟📥 _${usedPrefix}ytmp4doc *<enlace / link / url>*_
 ° ඬ⃟📥 _${usedPrefix}play.1 *<texto / enlace / link / url>*_
 ° ඬ⃟📥 _${usedPrefix}play.2 *<texto / enlace / link / url>*_
-° ඬ⃟📥 _${usedPrefix}play *<texto>*_
+° ඬ⃟📥 _${usedPrefix}песня *<Исполнитель Название песни>*_
 ° ඬ⃟📥 _${usedPrefix}playdoc *<texto>*_
 ° ඬ⃟📥 _${usedPrefix}playlist *<texto>*_
 ° ඬ⃟📥 _${usedPrefix}playlist2 *<texto>*_
@@ -127,7 +127,7 @@ let str = `
 *<𝔾ℝ𝕌ℙ𝕆𝕊/>* 
 
 ° ඬ⃟💎 _${usedPrefix}добавить *<numero>*_
-° ඬ⃟💎 _${usedPrefix}пиуу *<@tag>*_
+° ඬ⃟💎 _${usedPrefix}удалить *<@tag>*_
 ° ඬ⃟💎 _${usedPrefix}grupo *<abrir / cerrar>*_
 ° ඬ⃟💎 _${usedPrefix}promote *<@tag>*_
 ° ඬ⃟💎 _${usedPrefix}demote *<@tag>*_
