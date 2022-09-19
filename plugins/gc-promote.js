@@ -20,12 +20,12 @@ var user = number + '@s.whatsapp.net'
 } 
 } catch (e) {
 } finally {
-conn.groupParticipantsUpdate(m.chat, [user], 'назначить админом')
+conn.groupParticipantsUpdate(m.chat, [user], 'назначитьадмином')
 conn.reply(m.chat, `*[ ✅ ] ÓRDENES RECIBIDAS*`, m)
 }}
-handler.help = ['*593xxx*','*@usuario*','*responder chat*'].map(v => 'назначить админом ' + v)
+handler.help = ['*593xxx*','*@usuario*','*responder chat*'].map(v => 'назначитьадмином ' + v)
 handler.tags = ['group']
-handler.command = /^(назначить админом)$/i
+handler.command = /^(назначитьадмином)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
