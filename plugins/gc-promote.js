@@ -25,7 +25,7 @@ conn.reply(m.chat, `*[ ✅ ] Выполнено*`, m)
 }}
 handler.help = ['*593xxx*','*@usuario*','*responder chat*'].map(v => 'promote ' + v)
 handler.tags = ['group']
-handler.command = /^(назначить админом)$/i
+handler.command = /^(назначитьадмином)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
