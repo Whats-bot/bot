@@ -269,9 +269,9 @@ export async function handler(chatUpdate) {
                 if (!('audios' in chat))
                     chat.audios = false                            
                 if (!('antiLink' in chat))
-                    chat.antiLink = false
+                    chat.antiLink = true
                 if (!('antiLink2' in chat))
-                    chat.antiLink2 = true
+                    chat.antiLink2 = false
                 if (!('antiviewonce' in chat))
                     chat.antiviewonce = false
                 if (!('antiToxic' in chat))
@@ -291,8 +291,8 @@ export async function handler(chatUpdate) {
                     modohorny: true,
                     autosticker: false,
                     audios: true,
-                    antiLink: false,
-                    antiLink2: true,
+                    antiLink: true,
+                    antiLink2: false,
                     antiviewonce: false,
                     antiToxic: false,
                     expired: 0,
