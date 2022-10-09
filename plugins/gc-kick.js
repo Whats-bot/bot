@@ -11,7 +11,7 @@ await delay(1 * 1000)
 }}
 handler.help = ['kick @user']
 handler.tags = ['group']
-handler.command = /^(пиуу|sacar|\-)$/i
+handler.command = /^(удалить|sacar|\-)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
